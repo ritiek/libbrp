@@ -32,8 +32,6 @@ public:
   Huffman();
   ~Huffman();
 
-  void train(const char* buffer, int len);
-
   void build();
 
   // NOTE: this assumes the topmost bit of the first byte is unused
