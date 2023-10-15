@@ -13,9 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-    - name: libdecompress
+    - name: libbrp
       run: |
         make lib
-        make bin
+        make clean
+        make examples
         make clean
         make all
